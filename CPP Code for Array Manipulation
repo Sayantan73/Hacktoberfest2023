@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int arr1[n],arr2[n];
+
+    for(int i=0;i<n;i++){
+        cin>>arr1[i];
+    }
+    cout<<"array containig duplicates is "<<endl;
+    for(int j=0;j<n;j++){
+        if(arr1[j]==arr1[j+1]){
+            arr2[j]=arr1[j];
+            cout<<arr2[j]<<endl;
+        }
+        else{
+            //cout<<"-1"<<endl;
+            continue;
+        }
+    }
+    return 0;
+
+}
+
