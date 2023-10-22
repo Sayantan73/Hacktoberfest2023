@@ -1,7 +1,9 @@
-all contributors please leave a ⭐ on the repository
-
-
 # Hacktoberfest2023
 Contrubute here to Complete Hacktoberfest challenge
 
-you can also find issue and leave a pull request according to that
+## Currently Added Projects
+
+- [x] Form Validation
+- [x] Rock Paper Scissors Game in Java
+- [x] String Counter in Python
+- [x] Navbar in HTML5 and CSS3
