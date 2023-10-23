@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: whitesmoke;
+    overflow-x: 0;
+}
+
+.nav-logo {
+    color: rgba(33, 35, 48, 0.71)
+}
+
+.nav-list {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #5b7fdf;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #5b7fdf;
+    font-weight: 700;
+}
+
+.nav-list li a.active {
+    color: #5b7fdf;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: none !important;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+
+    .menu-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        height: 100vh;
+        background: rgba(35, 33, 35, 0.322);
+    }
+
+    .menu-bar li {
+        list-style: none;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu-bar li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(32, 56, 218);
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .menu-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        padding: 15px;
+        border: none;
+        outline: none;
+        color: rgba(33, 35, 48, 0.71);
+        font-size: 24px;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 10000;
+    }
+
+}
